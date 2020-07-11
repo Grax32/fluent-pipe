@@ -1,9 +1,12 @@
 {
   "name": "fluentpipe",
-  "version": "1.0.0",
-  "description": "Execute fluent-style code without modifying prototype ",
+  "version": "1.0.1",
+  "description": "Execute fluent-style code without modifying prototype",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint **/*.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +14,11 @@
     "pipe"
   ],
   "author": "David Walker",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "typescript": "^3.9.6"
+  }
 }
