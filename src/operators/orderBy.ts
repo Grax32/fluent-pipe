@@ -1,6 +1,11 @@
 type SortExpressionSingle<T> = (value: T) => string | number | boolean ;
 type SortExpression<T> = SortExpressionSingle<T> | SortExpressionSingle<T>[];
 
+/** 
+ * @description Sort array by 1 or more expressions
+ * @example orderBy(myArrayOfObjects, v => v.firstName)
+ * @example orderBy(myArrayOfObjects, [v => v.lastName, v => v.firstName])
+ */
 export function orderBy<T>(value: T[], sortExpression: SortExpression<T>): T[] {
   const newValue = [...value];
 
