@@ -8,7 +8,7 @@ describe("Fluent Pipe Tests", () => {
         .pipe(v => v.map(num => num * -2))
         .result;
 
-        expect(result[0]).toBe(-18);
+        expect(result.join(',')).toBe('-18,-6,-10,-4,-2');
     });
 });
 

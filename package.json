@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "lint": "eslint **/*.ts",
-    "test": "rimraf ./test/ && tsc --project ./tsconfig.spec.json && jasmine ./test-dist"
+    "test": "rimraf ./test/ && tsc --project ./tsconfig.spec.json && jasmine"
   },
   "keywords": [
     "fluent",
@@ -23,5 +23,8 @@
     "jasmine": "^3.5.0",
     "rimraf": "^3.0.2",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@types/node": "^14.0.23"
   }
 }
