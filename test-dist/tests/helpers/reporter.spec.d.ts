@@ -40,4 +40,4 @@ declare function log(...values: (EncodedString | string)[]): void;
 declare function logLine(background: BackgroundColor, foreground: ForegroundColor): void;
 declare function getPrettyStatus(status: string | null | undefined): "" | EncodedString;
 declare const myReporter: jasmine.CustomReporter;
-//# sourceMappingURL=reporter.d.ts.map
+//# sourceMappingURL=reporter.spec.d.ts.map

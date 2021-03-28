@@ -105,4 +105,4 @@ const myReporter = {
 };
 jasmine.getEnv().clearReporters();
 jasmine.getEnv().addReporter(myReporter);
-//# sourceMappingURL=reporter.js.map
+//# sourceMappingURL=reporter.spec.js.map
